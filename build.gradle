@@ -39,5 +39,5 @@ test {
 }
 
 jar {
-    archiveBaseName = 'NodyRelay'
+    archiveBaseName = 'BodyRelay'
 }

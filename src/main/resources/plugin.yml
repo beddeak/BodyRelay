@@ -1,4 +1,4 @@
-name: NodyRelay
+name: BodyRelay
 version: '${version}'
 main: io.github.beddeak.change.ChangePlugin
 api-version: '26.3'
@@ -7,7 +7,7 @@ description: '몸 하나를 여러 플레이어가 정해진 시간마다 교대
 commands:
   change:
     description: 릴레이 시작·종료, 교대 타이머, 순서 지정
-    aliases: [체인지, 교대, relay, nodyrelay]
+    aliases: [체인지, 교대, relay, bodyrelay]
     usage: /<command> help
 permissions:
   change.admin:

@@ -18,8 +18,8 @@ try {
     $gradleArguments = @('clean', 'build', '--console=plain', '--no-daemon')
     if ($Offline) { $gradleArguments += '--offline' }
     & .\gradlew.bat @gradleArguments
-    if ($LASTEXITCODE -ne 0) { throw "NodyRelay build failed: exit $LASTEXITCODE" }
-    $builtJars = @(Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'build\libs') -Filter 'NodyRelay-*.jar')
+    if ($LASTEXITCODE -ne 0) { throw "BodyRelay build failed: exit $LASTEXITCODE" }
+    $builtJars = @(Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'build\libs') -Filter 'BodyRelay-*.jar')
     foreach ($builtJar in $builtJars) { Write-Output ('JAR: ' + $builtJar.FullName) }
 } finally {
     $env:JAVA_HOME = $previousJavaHome
