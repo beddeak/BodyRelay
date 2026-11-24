@@ -1,0 +1,15 @@
+name: NodyRelay
+version: '${version}'
+main: io.github.beddeak.change.ChangePlugin
+api-version: '26.3'
+author: beddeak
+description: '몸 하나를 여러 플레이어가 정해진 시간마다 교대로 이어서 조종합니다'
+commands:
+  change:
+    description: 릴레이 시작·종료, 교대 타이머, 순서 지정
+    aliases: [체인지, 교대, relay, nodyrelay]
+    usage: /<command> help
+permissions:
+  change.admin:
+    description: 릴레이 시작·종료, 타이머 조작, 교대·순서 지정, 참가자 관리
+    default: op

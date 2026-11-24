@@ -1,0 +1,34 @@
+# 한 사람이 조종하는 시간(초, 3~86400). /change interval 2m 처럼 게임 안에서도 바꿀 수 있습니다.
+turn-seconds: 60
+
+# 교대 직전 조종자와 다음 사람 화면에 뜨는 카운트다운(초). 0이면 끕니다.
+countdown-seconds: 5
+
+# 화면 위 보스바로 교대까지 남은 시간과 다음 차례를 보여 줍니다.
+bossbar: true
+
+# 교대 순서. rotation = 시작할 때 섞은 순서대로 돌아가며, random = 매번 랜덤(같은 사람 연속 없음)
+order: rotation
+
+# 게임 중에 새로 들어온 플레이어를 자동으로 참가시켜 대기실로 보냅니다.
+auto-join: true
+
+# 대기 중인 사람에게 사망·발전 과제 메시지를 숨깁니다(조종자와 관전자에게만 보임).
+hide-game-messages: true
+
+# start 할 때 이 게임 모드인 플레이어만 참가합니다. 관전자·크리에이티브(촬영자)는 기본으로 빠집니다.
+game-modes:
+  - SURVIVAL
+  - ADVENTURE
+
+# 참가하지 않을 플레이어 이름. /change leave <이름>, /change join <이름> 으로 관리합니다.
+excluded: []
+
+body:
+  # 엔더 상자 내용물도 몸과 함께 넘어갑니다.
+  ender-chest: true
+  # 침대·리스폰 앵커 리스폰 지점도 몸과 함께 넘어갑니다.
+  respawn-point: true
+
+# 대기실로 쓸 빈 월드 이름. 없으면 자동으로 만듭니다.
+lobby-world: change_lobby
